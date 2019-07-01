@@ -227,11 +227,11 @@ function session(options) {
         return;
       }
 
-      // only send secure cookies via https
-      if (req.session.cookie.secure && !issecure(req, trustProxy)) {
-        debug('not secured');
-        return;
-      }
+      // // only send secure cookies via https
+      // if (req.session.cookie.secure && !issecure(req, trustProxy)) {
+      //   debug('not secured');
+      //   return;
+      // }
 
       if (!touched) {
         // touch session
